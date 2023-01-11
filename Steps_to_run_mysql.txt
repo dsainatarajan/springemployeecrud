@@ -1,8 +1,8 @@
 cd $HOME
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 export PATH=$HOME/bin:$JAVA_HOME/bin:$PATH
-mkdir mysqlspring
-cd mysqlspring
+mkdir mysqlspring1
+cd mysqlspring1
 git clone https://github.com/dsainatarajan/springemployeecrud.git -b restcontroller
 cd springemployeecrud
 mvn package
