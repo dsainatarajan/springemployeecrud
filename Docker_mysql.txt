@@ -1,0 +1,11 @@
+sudo apt install docker.io -y
+sudo gpasswd -a $USER docker
+# Close the terminal & open terminal
+# On the new terminal run the following commands
+docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=Password -e MYSQL_DATABASE=springtraining -p 3306:3306 -d mysql:5.7
+docker ps
+docker exec -it mysqldb bash
+mysql -u root -pPassword
+show databases;
+use springtraining;
+show tables;
