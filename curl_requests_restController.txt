@@ -7,7 +7,7 @@ curl --location --request POST 'http://localhost:8181/employees' --header 'Conte
 curl 'http://localhost:8181/employees' 
 
 # update employee
-curl --location --request PUT 'http://localhost:8181/employees/2' --header 'Content-Type: application/json' --header 'Accept: application/json' --data-raw '  { "name": "Ericsson India", "address": "India",  "sal": 200000.5  }'
+curl --location --request PUT 'http://localhost:8181/employees/1' --header 'Content-Type: application/json' --header 'Accept: application/json' --data-raw '  { "name": "Ericsson India", "address": "India",  "sal": 200000.5  }'
 
 # get Employee by name	
 curl http://localhost:8181/employees/search/findByName?ename=Harry%20Porter
